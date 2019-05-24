@@ -19,28 +19,3 @@ app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
 
-
-
-const main = async () => {
-  
-  try {
-    const user = await User.findById('5ce74f0827e94f0494da6f5f')
-    await user.populate('tasks').execPopulate()
-    console.log(user.tasks)
-    
-  } catch (err) {
-    console.log('Cannot find task for that user')
-  }
-  
-  // const task = await Task.findById('5ce751d0b1da1105099b77fc')
-  
-  // try {
-  //   await task.populate('owner').execPopulate()
-  // } catch (err) {
-  //   console.log(err)
-  // }
-  // console.log(task.owner)
-  
-}
-
-main()
