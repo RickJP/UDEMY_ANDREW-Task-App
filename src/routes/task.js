@@ -1,5 +1,5 @@
 const express = require('express');
-const Task = require('../models/Task');
+const Task = require('../models/task');
 const { ObjectID } = require('mongodb');
 const router = express.Router();
 const auth = require('../middleware/auth');

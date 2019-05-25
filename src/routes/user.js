@@ -1,6 +1,6 @@
 const express = require('express')
 const { ObjectID } = require("mongodb");
-const User = require('../models/User')
+const User = require('../models/user')
 const auth = require('../middleware/auth')
 const router = express.Router()
 const sharp = require('sharp')
